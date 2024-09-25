@@ -10,31 +10,41 @@ header h1 {
     font-size: 2.5em;
     text-align: center;
 }
-
+.img-yellow{
+    border-radius: 40px;
+}
 nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
 
-nav ul li a {
-    color: #61dafb;
+.nav-own-class{
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.2em;
+    margin: 0 15px;
+    background-color: rgb(230, 184, 99);
+    padding: 10px;
+    border-radius: 15px;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+
+.nav-own-class:hover {
+    background-color: rgb(238, 174, 56);
+    transition: 0.6s;
+}
+
+.all-cards{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* Стили для главного контента */
 main {
     padding: 40px 0;
+    background-color: rgb(230, 184, 99);
 }
 
 .featured-products h2 {
@@ -143,9 +153,8 @@ footer {
   }
   
   .flip-card-front {
-    background: linear-gradient(120deg, rgb(112, 111, 109) 60%, rgb(108, 108, 108) 88%,
-       rgb(255, 211, 195) 40%, rgba(79, 76, 75, 0.603) 48%);
-    color: rgb(255, 255, 255);
+    background-color: rgb(238, 174, 56);
+    border: 0.5px solid black;
   }
   
   .flip-card-back {
@@ -153,4 +162,32 @@ footer {
        rgb(88, 88, 88) 40%, rgb(157, 157, 157) 78%);
     color: white;
     transform: rotateY(180deg);
+  }
+
+
+  main h1{
+    text-align: center;
+    color: white;
+  }
+
+  main h2{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .carousel-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+  }
+  .carousel-owm{
+    width: 600px;
+  }
+
+  .carousel-section img{
+    width: 600px;
+    border-radius: 30px;
   }
