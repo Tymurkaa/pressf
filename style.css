@@ -95,7 +95,7 @@ main {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color:  rgb(238, 174, 56);
 }
 
 /* Стили подвала */
@@ -158,8 +158,8 @@ footer {
   }
   
   .flip-card-back {
-    background: linear-gradient(120deg, rgb(84, 84, 84) 30%, rgb(85, 85, 85) 88%,
-       rgb(88, 88, 88) 40%, rgb(157, 157, 157) 78%);
+    background: linear-gradient(120deg,  rgb(238, 174, 56) 30%,  rgb(237, 193, 109) 88%,
+    rgb(233, 181, 84) 40%, rgb(255, 255, 255) 78%);
     color: white;
     transform: rotateY(180deg);
   }
@@ -191,3 +191,4 @@ footer {
     width: 600px;
     border-radius: 30px;
   }
+  
