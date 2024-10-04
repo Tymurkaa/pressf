@@ -53,3 +53,7 @@ button:hover {
     background-color: #e6a605; /* Темный оттенок кнопки при наведении */
 }
 
+.reg-section{
+    display: flex;
+    justify-content: center;
+}
