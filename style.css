@@ -11,8 +11,12 @@ header h1 {
     text-align: center;
 }
 .img-yellow{
+  
     border-radius: 40px;
+    transition: transform 0.2s;
+    
 }
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -44,7 +48,7 @@ nav ul {
 /* Стили для главного контента */
 main {
     padding: 40px 0;
-    background-color: rgb(230, 184, 99);
+    background-color: #212529;;
 }
 
 .featured-products h2 {
@@ -86,7 +90,7 @@ main {
     display: inline-block;
     padding: 10px 20px;
     font-size: 1em;
-    color: #fff;
+    color: #ffffff;
     background-color: #252525;
     border: none;
     border-radius: 5px;
@@ -191,4 +195,34 @@ footer {
     width: 600px;
     border-radius: 30px;
   }
+
+  body{
+    animation: fadeInText 1.2s forwards;
+background-color: #212529;
+  }
+
+  @keyframes fadeInText {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.element.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
   
