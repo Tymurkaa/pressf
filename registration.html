@@ -70,12 +70,23 @@
   </header>
   <main class="reg-section">
     <form class="form">
-      <div class="pupsik">
+      <div class="radio-inputs">
+        <label class="radio">
+          <input type="radio" name="radio" checked="" />
+          <span class="name">Регистрация</span>
+        </label>
+        <label class="radio">
+          <input type="radio" name="radio" />
+          <span class="name"><a href="login.html">Войти</a></span>
+        </label>
+</div>
+
+      <!-- <div class="pupsik">
       <a href="login.html">
         <button class="btn-left" type="button">Войти</button>
     </a>
     <button class="btn-right" type="button">Регистрация</button>
-      </div>
+      </div> -->
        <div class="input-container">
          <input placeholder="E-Mail" type="email">
          <span>
@@ -85,7 +96,7 @@
          </span>
      </div>
      <div class="input-container">
-         <input placeholder="Пароль" type="password">
+         <input  class="form-control" type="password" id="password" name="password" required placeholder="Пароль" >
 
          <span>
            <svg stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,12 +105,27 @@
            </svg>
          </span>
        </div>
-        <button class="submit" type="submit">
-      Зарегистрироватся
+       <div class="input-container">
+        <input class="form-control" type="password" id="confirmPassword" name="confirmPassword" required  placeholder="Подтверждение пароля" >
+        <span>
+          <svg stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+            <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+          </svg>
+        </span>
+      </div>
+
+      <!-- Порожній блок для повідомлення -->
+      <div id="passwordError" style="color: red; display: none;"></div>
+        <button type="button" class="submit">
+          <a href="index.html">
+      Зарегистрироватся</a>
      </button>
   </form>
 
   </main>
+  <script src="script.js"></script>
+  <script src="registration.js"></script>
 </body>
 
 </html>
