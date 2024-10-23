@@ -48,7 +48,7 @@ nav ul {
 /* Стили для главного контента */
 main {
     padding: 40px 0;
-    background-color: #212529;;
+    background-color: #212529;
 }
 
 .featured-products h2 {
@@ -197,7 +197,7 @@ footer {
   }
 
   body{
-    animation: fadeInText 1.2s forwards;
+    /* animation: fadeInText 1.2s forwards; */
 background-color: #212529;
   }
 /* 
@@ -320,7 +320,7 @@ html{
 }
 
 
-.switch {
+ .switch {
   
   font-size: 17px;
   position: relative;
@@ -344,7 +344,7 @@ html{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #212529;
+  background-color: #ffffff;
   transition: .4s;
   border-radius: 30px;
 }
@@ -365,9 +365,6 @@ input:checked + .slider {
   background-color: #212529;
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #212529;
-}
 
 input:checked + .slider:before {
   transform: translateX(1.5em);
@@ -389,9 +386,34 @@ input:checked + .slider::after {
   left: 80%;
   width: 0px;
   height: 0px;
+} 
+
+
+/* Светлая тема */
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+body.light-theme .slider {
+  background-color: #ffffff;
+}
+body.light-theme main {
+  padding: 40px 0;
+  background-color: #ffffff;
+}
+/* Тёмная тема */
+body.dark-theme {
+  background-color: #212529;
+  color: #ffffff;
 }
 
-body.dark-theme {
-  background-color: rgb(130, 61, 115);
-  color: white;
+
+body.dark-theme .slider {
+  background-color: #212529;
 }
+
+body.dark-theme main {
+  padding: 40px 0;
+  background-color: #212529;
+}
+
